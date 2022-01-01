@@ -1,9 +1,14 @@
 import express from 'express';
-const router = express.Router();
+
+
+
+const app = express();
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
- // res.render('index', { title: 'Express' });
+app.get('/', function(req, res, next) {
+  res.render("index");
+ 
 });
 
-export default router;
+export default app;
